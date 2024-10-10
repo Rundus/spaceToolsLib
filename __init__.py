@@ -1,5 +1,6 @@
 __all__ = ['Tools',
-           'Variables']
+           'Variables',
+           'colorbars']
 
 
 

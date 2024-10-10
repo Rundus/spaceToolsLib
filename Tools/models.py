@@ -86,8 +86,10 @@ def CHAOS(lat, long, alt, times):
     from glob import glob
     from chaosmagpy import load_CHAOS_matfile
     from chaosmagpy.data_utils import mjd2000
-
-    FILEPATH_CHAOS = glob(r'C:\Users\cfelt\PycharmProjects\UIOWA_CDF_operator\ACESII_code\supportCode\CHAOS/CHAOS-*.mat')[0]
+    from pathlib import Path
+    from os.path import dirname
+    
+    FILEPATH_CHAOS = dirname(Path(__file__).parent) + "\supportPackages\CHAOS\CHAOS-7.16.mat"    
 
     R_REF = 6371.2
 
