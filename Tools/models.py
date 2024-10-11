@@ -88,8 +88,9 @@ def CHAOS(lat, long, alt, times):
     from chaosmagpy.data_utils import mjd2000
     from pathlib import Path
     from os.path import dirname
-    
-    FILEPATH_CHAOS = dirname(Path(__file__).parent) + "\supportPackages\CHAOS\CHAOS-7.16.mat"    
+
+    directoryPath = dirname(Path(__file__).parent) + "\supportPackages\CHAOS\\"
+    FILEPATH_CHAOS = glob(directoryPath+'\*.mat')[0]
 
     R_REF = 6371.2
 
