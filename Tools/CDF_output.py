@@ -5,6 +5,20 @@
 
 
 def outputCDFdata(outputPath, data_dict, **kwargs):
+    '''
+    Write .cdf file to specified absolute path
+
+    spacetoolslib.outputCDFdata(outputPath, data_dict, **kwargs)
+
+    Paramters:
+    [1] outputPath - String with the absolute path of the cdf file destination
+    [2] data_dict - dictionariy containing the data to write. Must be in format {'Var Name 1':[DATA1, {'attributeKey1':AttributeVal1, ...}], ...  }
+    [3] kwargs - Key word arguments.
+        (1) globalAttrsMod - dictionary containing the global attributes of the .cdf file. If none are given, a blank global attributes dictionary is written instead.
+        (2) instrNam - Name of the instrument that corresponds to the dataset. If none is given, "none" is written instead.
+    '''
+
+
     from os import remove, path
     from spaceToolsLib.setupFuncs.setupSpacepy import (setupPYCDF)
     from spaceToolsLib.Variables.exampleMissionAttributes import EXAMPLE_mission_dicts

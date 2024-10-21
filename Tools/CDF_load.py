@@ -10,8 +10,6 @@ from spacepy import pycdf
 
 def getInputFiles(rocketFolderPath,wRocket,inputPath_modifier,**kwargs):
 
-
-
     modifier = kwargs.get('modifier', '')
     inputFiles = glob(f'{rocketFolderPath}{inputPath_modifier}\{modifier}\{fliers[wRocket - 4]}\*.cdf')
     input_names = [ifile.replace(f'{rocketFolderPath}{inputPath_modifier}\{modifier}\{fliers[wRocket - 4]}\\', '') for ifile in inputFiles]
