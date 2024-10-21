@@ -3,10 +3,6 @@
 # --- --- --- --- --- --- ---
 # --- USER SPECIFIC DATA ---
 # --- --- --- --- --- --- ---
-user = 'cfelt'
-PATH_TO_DATA_FOLDER = r'C:\Data\\'
-HOMEDRIVE = 'C:'
-HOMEPATH = 'C:\\'
 
 # CDF LIB path
 from pathlib import Path
