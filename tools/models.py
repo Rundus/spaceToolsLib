@@ -5,7 +5,7 @@
 
 # Imports
 from numpy import radians,power,cos,sqrt,array,exp
-from spaceToolsLib.Variables.physicsVariables import q0,Re,u0,lightSpeed,m_e,ep0,IonMasses,cm_to_m
+from spaceToolsLib.variables.physicsVariables import q0,Re,u0,lightSpeed,m_e,ep0,IonMasses,cm_to_m
 
 
 # --- Dipole Magnetic Field ---

@@ -5,7 +5,7 @@
 
 
 # --- The Basic rotation matricies ---
-from spaceToolsLib.Variables.physicsVariables import Re
+from spaceToolsLib.variables.physicsVariables import Re
 from numpy import array, cos, sin, matmul, radians, sqrt, arcsin
 from math import sqrt,pow,atan2,cos,sin
 def Rx(angle):

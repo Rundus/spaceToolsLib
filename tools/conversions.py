@@ -4,9 +4,8 @@
 
 
 # IMPORTS
-from spaceToolsLib.Variables.physicsVariables import lat_to_meter
+from spaceToolsLib.variables.physicsVariables import lat_to_meter,Re
 from numpy import cos, radians, pi
-from spaceToolsLib.Variables.physicsVariables import Re
 
 def long_to_meter(long, lat):
     return long*(lat_to_meter * cos(radians(lat)))

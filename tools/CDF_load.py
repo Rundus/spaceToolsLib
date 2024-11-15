@@ -3,7 +3,7 @@
 # DESCRIPTION: Place to store all the functions I used to load CDFs
 
 from glob import glob
-from spaceToolsLib.Variables.fliers import fliers
+from spaceToolsLib.variables.fliers import fliers
 from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
 setupPYCDF()
 from spacepy import pycdf

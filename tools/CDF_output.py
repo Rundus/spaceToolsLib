@@ -21,7 +21,7 @@ def outputCDFdata(outputPath, data_dict, **kwargs):
 
     from os import remove, path
     from spaceToolsLib.setupFuncs.setupSpacepy import (setupPYCDF)
-    from spaceToolsLib.Variables.exampleMissionAttributes import EXAMPLE_mission_dicts
+    from spaceToolsLib.variables.exampleMissionAttributes import EXAMPLE_mission_dicts
     setupPYCDF()
     from spacepy import pycdf
 

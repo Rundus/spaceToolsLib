@@ -5,7 +5,7 @@
 from .Tools import *
 from .colorbars import *
 from .setupFuncs import *
-from .Variables import *
+from .variables import *
 
 
 
