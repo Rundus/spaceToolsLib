@@ -7,7 +7,6 @@ from .coordinates import *
 from .diagnoistics import *
 from .epochTime import *
 from .filter import *
-from .fit import *
 from .interpolate import *
 from .models import *
 from .transforms import *

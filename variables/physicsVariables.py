@@ -15,3 +15,11 @@ ionNames =  ['proton',       'O+',       'H+',        'He+',      'O2+',      'N
 ep0 = 8.8541878128E-12 # permittivity of free space
 u0 = 4*(3.1415926535)*(10**(-7))
 lightSpeed = 299792458
+
+m_Hp = 1.6738E-27 # proton in kg, same for rest
+m_Op = 2.6567E-26
+m_Hep = 6.646477E-27
+m_O2p = 5.3134E-26
+m_Np = 2.3259E-26
+m_NOp = 4.9826E-26
+m_N2p = 4.6518E-26
