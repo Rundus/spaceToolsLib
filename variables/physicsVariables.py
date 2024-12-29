@@ -10,16 +10,34 @@ q0 = 1.602176565 * 10**(-19)
 kB = 1.380649 * 10**(-23)
 cm_to_m = 100
 erg_to_eV = 6.2415E11 # how many eVs are in 1 erg
-IonMasses = [1.67E-27, 2.6567E-26, 1.6738E-27, 6.646477E-27, 5.3134E-26, 4.9826E-26, 2.3259E-26,   4.6518E-26]
-ionNames =  ['proton',       'O+',       'H+',        'He+',      'O2+',      'NO+',       'N+',   'N2+']
 ep0 = 8.8541878128E-12 # permittivity of free space
 u0 = 4*(3.1415926535)*(10**(-7))
 lightSpeed = 299792458
 
-m_Hp = 1.6738E-27 # proton in kg, same for rest
-m_Op = 2.6567E-26
-m_Hep = 6.646477E-27
-m_O2p = 5.3134E-26
-m_Np = 2.3259E-26
-m_NOp = 4.9826E-26
-m_N2p = 4.6518E-26
+
+# --- --- --- --- --- -
+# --- SPACE PHYSICS ---
+# --- --- --- --- --- -
+
+# ionospheric ions
+amu = 1.660539E-27
+ion_dict = {'proton':amu, # proton in kg, same for rest
+            'O+':15.999*amu,
+            'H+':1.008*amu,
+            'He+':4.002*amu,
+            'O2+':2*15.999*amu,
+            'NO+':(15.999+14.007)*amu,
+            'N+':14.007*amu,
+            'N2+':14.007*2*amu} # ionospheric ions and their masses
+
+# ionospheric neutrals
+netural_dict = {
+    'N2': 1.008*amu,
+    'O2':15.999*2*amu,
+    'O':15.999*amu,
+    'He':4.002*amu,
+    'H':1.008*amu,
+    'AR':39.95*amu,
+    'N':14.007*amu,
+    'NO':(15.999+14.007)*amu
+}
