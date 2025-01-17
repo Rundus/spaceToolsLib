@@ -13,6 +13,8 @@ erg_to_eV = 6.2415E11 # how many eVs are in 1 erg
 ep0 = 8.8541878128E-12 # permittivity of free space
 u0 = 4*(3.1415926535)*(10**(-7))
 lightSpeed = 299792458
+gravG = 6.67408E-11
+Me = 5.9722E24
 
 
 # --- --- --- --- --- -
@@ -32,7 +34,7 @@ ion_dict = {'proton':amu, # proton in kg, same for rest
 
 # ionospheric neutrals
 netural_dict = {
-    'N2': 1.008*amu,
+    'N2': 28.01340*amu,
     'O2':15.999*2*amu,
     'O':15.999*amu,
     'He':4.002*amu,

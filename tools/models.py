@@ -5,7 +5,7 @@
 
 # Imports
 from numpy import radians,power,cos,sqrt,array,exp
-from spaceToolsLib.variables.physicsVariables import q0,Re,u0,lightSpeed,m_e,ep0,IonMasses,cm_to_m
+from spaceToolsLib.variables.physicsVariables import q0,Re,u0,lightSpeed,m_e,ep0,cm_to_m
 
 
 # --- Dipole Magnetic Field ---
@@ -21,62 +21,6 @@ def Bdip_mag(Alt_km, Lat_deg):
         Bdip = B0 * power(Re / (Re + Alt_km), 3) * sqrt(1 + 3 * power(cos(colat), 2))
 
     return Bdip
-
-
-# --- Model Ionosphere ---
-# Inputs: list containing altitudes of interest
-# Outputs: list containing lists of plasma paramters at all the input altitudes with format:
-# [InputAltitude,rho, Te (in K), Ti (in K), n(O2+), n(N)+), N(O+), n(e)]
-# all number density are in cm^-3
-
-def JonesRees1972_Ionosphere(inputAltitudes):
-
-    # --- get the model data ---
-    import pandas as pd
-    modelFilePath = r'C:\Users\cfelt\PycharmProjects\UIOWA_CDF_operator\ACESII_code\supportCode\IonosphereModels\JonesRees_IonosphereValues.xlsx'
-    pandas_dict = pd.read_excel(modelFilePath)
-    VariableNams = [thing for thing in pandas_dict]
-    modelData = [pandas_dict[key][1:] for key in VariableNams]
-
-
-    # --- interpolate input altitude onto dataset ---
-    interpData = []
-    from scipy.interpolate import CubicSpline
-    for varNam in VariableNams:
-        if varNam.lower() not in 'height' and varNam != 'Variable':
-            # --- cubic interpolation ---
-            splCub = CubicSpline(pandas_dict['Height'][1:],pandas_dict[varNam][1:])
-
-            # --- evaluate the interpolation at all the new Epoch points ---
-            interpData.append(array([splCub(hVal) for hVal in inputAltitudes]))
-
-
-    # calculate rho
-    m_O2p= 5.3133E-26
-    m_NOp= 4.9826E-26
-    m_Op = 2.6566E-26
-    rho = m_O2p*array(interpData[2]) + m_NOp*array(interpData[3]) + m_Op*array(interpData[4])
-
-    finalData = [inputAltitudes, rho] + interpData
-
-    return {'Height':[finalData[0], {'UNITS': 'km'}],
-            'rho':   [finalData[1], {'UNITS': 'kg/cm^-3'}],
-            'T_e':   [finalData[2], {'UNITS': 'Kelvin'}],
-            'T_i':   [finalData[3], {'UNITS': 'Kelvin'}],
-            'n_O2p':[finalData[4], {'UNITS': 'cm^-3'}],
-            'n_NOp':[finalData[5], {'UNITS': 'cm^-3'}],
-            'n_Op': [finalData[6], {'UNITS': 'cm^-3'}],
-            'n_e':  [finalData[7], {'UNITS': 'cm^-3'}],
-            }
-
-def density(z): # returns density for altitude "z [km]" in m^-3
-    h = 0.06*Re # in km from E's surface
-    n0 = 6E4
-    n1 = 1.34E7
-    z0 = 0.05*Re # in km from E's surface
-    n = n0*exp(-1*(z-z0)/h) + n1*(z**(-1.55)) # calculated density (in cm^-3)
-    return (cm_to_m**3)*n
-
 
 
 def CHAOS(lat, long, alt, times):
