@@ -12,21 +12,20 @@ from spacepy import pycdf
 
 def loadDictFromFile(inputFilePath, **kwargs):
 
-    '''
+    """
     This function loads a .cdf file and returns a spaceToolsLib data_dictionary containing
     the variable names, data and attributes. The file's global attributes can also be returned.
 
-    :param inputFilePath: str
-        Absolute path of the file to load.
-        Accepted files: .cdf
+    :param inputFilePath: Absolute path of the file to load. Accepted files: .cdf
+    :type inputFilePath: str
 
-    :param getGlobalAttrs: bool, optional
-        If True, returns the global attributes of the file as a python dictionary as well as the data dictionary
+    :param getGlobalAttrs: Optional, if True, returns the global attributes of the file as a python dictionary as well as the data dictionary
+    :type getGlobalAttrs: bool
 
-    :return data_dictionary: dict
-        Python dictionary containing the file variable data and variable attributes. If getGlobalAttrs == True then
+    :return data_dictionary: Python dictionary containing the file variable data and variable attributes. If getGlobalAttrs == True then
         a tuple containing both the data_dict and global attributes is returned (data_dict, globalAttrs).
-    '''
+    :rtype: dict
+    """
 
     input_data_dict = kwargs.get('input_data_dict', {})
     globalAttrs = {}

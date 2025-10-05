@@ -5,8 +5,7 @@ This page details the CDF_load function of spaceToolslib
 
 Functions
 ---------
-.. currentmodule:: spaceToolsLib.tools.CDF_load
-.. autofunction:: loadDictFromFile
+.. autofunction:: spaceToolsLib.loadDictFromFile
 
 Notes
 -----
