@@ -1,0 +1,4 @@
+
+
+# Command to "build"/update the html webpage each time you change it:
+sphinx-build -M html C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\ C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\_build\

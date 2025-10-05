@@ -1,21 +1,32 @@
-# --- CDF_output.py ---
-# --- Author: C. Feltman ---
-# DESCRIPTION: Place to store all the functions I used to output CDFs
+'''
+CDF_output.py
 
-def outputCDFdata(outputPath, data_dict, **kwargs):
+Handles file output functions for spaceToolsLib
+Author: C. Feltman
+'''
+
+
+def outputDataDict(outputPath, data_dict, **kwargs):
     '''
-    Write .cdf file to specified absolute path
+    This function writes out a data dictionary to a file. The file's global attributes can also be specified. 
+    Default behavior is to overwrite any pre-existing file specified at outputPath.  
 
-    spacetoolslib.outputCDFdata(outputPath, data_dict, **kwargs)
+    Parameters
+    ----------
+    outputPath : str
+        Absolute path for the file to be written to. File name must end in file extension e.g. (path to file)//your_file.cdf
+        Accepted files: .cdf
 
-    Paramters:
-    [1] outputPath - String with the absolute path of the cdf file destination
-    [2] data_dict - dictionariy containing the data to write. Must be in format {'Var Name 1':[DATA1, {'attributeKey1':AttributeVal1, ...}], ...  }
-    [3] kwargs - Key word arguments.
-        (1) globalAttrsMod - dictionary containing the global attributes of the .cdf file. If none are given, a blank global attributes dictionary is written instead.
-        (2) instrNam - Name of the instrument that corresponds to the dataset. If none is given, "none" is written instead.
+    data_dict : dict
+        python dictionary formatted in the spaceToolsLib way (see github README.md for examples).
+        Contains the variable data in numpy arrays and variable attributes as dictionaries.
+
+    globalAttrsMod : dict, optional
+        python dictionary containing the global attributes of the file.
+
+    Returns
+    -------
     '''
-
 
     from os import remove, path
     from spaceToolsLib.setupFuncs.setupSpacepy import (setupPYCDF)

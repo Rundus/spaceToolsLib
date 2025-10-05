@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 2">
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 4">
+      <change afterPath="$PROJECT_DIR$/.readthedocs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/notes_on_using_sphinx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/photos/spaceToolsLib_favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/photos/spaceToolsLib_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/photos/spaceToolsLib_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rst/CDF_load.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rst/help.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rst/install.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/rst/quickstart.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/spaceToolsLib_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/CDF_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_output.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +39,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2mDMz0dCr13o9HNciwyR8mYa1Vc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,17 +64,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/cfelt/PycharmProjects/spaceToolsLib",
+    "last_opened_file_path": "C:/Users/cfelt/PycharmProjects/spaceToolsLib/docs/photos",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\photos" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\photos" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib\math" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib\Tools\Variables" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib\Tools" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib" />
     </key>
   </component>
   <component name="RunManager" selected="Python.scratch">
@@ -377,7 +394,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759686938275</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="spaceToolsLib commit 3">
+      <option name="closed" value="true" />
+      <created>1759688721211</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1759688721211</updated>
+    </task>
+    <task id="LOCAL-00024" summary="spaceToolsLib commit 4">
+      <option name="closed" value="true" />
+      <created>1759689148774</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1759689148774</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,7 +428,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="spaceToolsLib commit 3" />
     <MESSAGE value="spaceToolsLib_package commit 1" />
     <MESSAGE value="spaceToolsLib_package commit 2" />
     <MESSAGE value="spaceToolsLib_package commit 3" />
@@ -414,6 +446,8 @@
     <MESSAGE value="spaceToolsLib_package commit 16" />
     <MESSAGE value="spaceToolsLib commit 1" />
     <MESSAGE value="spaceToolsLib commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 2" />
+    <MESSAGE value="spaceToolsLib commit 3" />
+    <MESSAGE value="spaceToolsLib commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 4" />
   </component>
 </project>

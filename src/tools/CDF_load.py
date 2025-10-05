@@ -1,23 +1,35 @@
-# --- CDF_load.py ---
-# --- Author: C. Feltman ---
-# DESCRIPTION: Place to store all the functions I used to load CDFs
+'''
+CDF_load.py
+
+Handles file input functions for spaceToolsLib
+Author: C. Feltman
+'''
 
 from glob import glob
-from spaceToolsLib.variables.fliers import fliers
 from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
 setupPYCDF()
 from spacepy import pycdf
 
-def getInputFiles(rocketFolderPath, wRocket, inputPath_modifier, **kwargs):
-
-    modifier = kwargs.get('modifier', '')
-    inputFiles = glob(f'{rocketFolderPath}{inputPath_modifier}\{modifier}\{fliers[wRocket - 4]}\*.cdf')
-    input_names = [ifile.replace(f'{rocketFolderPath}{inputPath_modifier}\{modifier}\{fliers[wRocket - 4]}\\', '') for ifile in inputFiles]
-    input_names_searchable = [ifile.replace(inputPath_modifier.lower() + '_', '') for ifile in input_names]
-
-    return inputFiles,input_names,input_names_searchable
-
 def loadDictFromFile(inputFilePath, **kwargs):
+    '''
+    This function loads a .cdf file and returns a spaceToolsLib data_dictionary containing
+    the variable names, data and attributes. The file's global attributes can also be returned.
+
+    Parameters
+    ----------
+    inputFilePath : str
+        Absolute path of the file to load.
+        Accepted files: .cdf
+
+    getGlobalAttrs : bool, optional
+        If True, returns the global attributes of the file as a python dictionary as well as the data dictionary
+
+    Returns
+    -------
+    data_dictionary : dict
+        Python dictionary containing the file variable data and variable attributes. If getGlobalAttrs == True then
+        a tuple containing both the data_dict and global attributes is returned (data_dict, globalAttrs).
+    '''
 
     input_data_dict = kwargs.get('input_data_dict', {})
     globalAttrs = {}
