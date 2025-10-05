@@ -1,11 +1,11 @@
-spaceToolsLib.tools.CDF_load
-============================
+CDF_load (:py:mod:spaceToolsLib.tools.CDF_load)
+===============================================
 
 This page details the CDF_load function of spaceToolslib
 
 Functions
 ---------
-.. py:currentmodule:: spaceToolsLib.tools.CDF_load
+.. currentmodule:: spaceToolsLib.tools.CDF_load
 .. autofunction:: loadDictFromFile
 
 Notes

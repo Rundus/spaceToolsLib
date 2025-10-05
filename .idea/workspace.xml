@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 6">
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/spaceToolsLib_logo.png" beforeDir="false" />
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/py-modindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/CDF_load.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/quickstart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst/CDF_load.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/tools/CDF_load.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst/help.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/help.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/install.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst/quickstart.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/quickstart.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_load.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +81,11 @@
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\tools" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\photos" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib\math" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib\Tools\Variables" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib\Tools" />
     </key>
   </component>
   <component name="RunManager" selected="Python.scratch">
@@ -415,7 +433,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759698662978</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="spaceToolsLib commit 7">
+      <option name="closed" value="true" />
+      <created>1759703130817</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1759703130817</updated>
+    </task>
+    <task id="LOCAL-00028" summary="spaceToolsLib commit 8">
+      <option name="closed" value="true" />
+      <created>1759704074358</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1759704074358</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -455,6 +489,8 @@
     <MESSAGE value="spaceToolsLib commit 4" />
     <MESSAGE value="spaceToolsLib commit 5" />
     <MESSAGE value="spaceToolsLib commit 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 6" />
+    <MESSAGE value="spaceToolsLib commit 7" />
+    <MESSAGE value="spaceToolsLib commit 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 8" />
   </component>
 </project>

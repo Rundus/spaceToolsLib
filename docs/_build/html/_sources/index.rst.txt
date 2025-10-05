@@ -12,15 +12,12 @@ Refer to `spacepy <https://spacepy.github.io/index.html>`_ or `cdflib <https://c
 
 Getting Started
 ===============
-
 First steps in spaceToolsLib
-
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    install
    quickstart
    help
-   spaceToolsLib.tools.CDF_load
 
 
 spaceToolsLib Module Reference
@@ -33,6 +30,7 @@ Description of all functions within spaceToolsLib, by module.
     :recursive:
 
     spaceToolsLib
+   ~spaceToolsLib.CDF_load
     ~spaceToolsLib.colorbars
     ~spaceToolsLib.math
     ~spaceToolsLib.setupFuncs

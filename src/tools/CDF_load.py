@@ -11,22 +11,19 @@ setupPYCDF()
 from spacepy import pycdf
 
 def loadDictFromFile(inputFilePath, **kwargs):
+
     '''
     This function loads a .cdf file and returns a spaceToolsLib data_dictionary containing
     the variable names, data and attributes. The file's global attributes can also be returned.
 
-    Parameters
-    ----------
-    inputFilePath : str
+    :param inputFilePath: str
         Absolute path of the file to load.
         Accepted files: .cdf
 
-    getGlobalAttrs : bool, optional
+    :param getGlobalAttrs: bool, optional
         If True, returns the global attributes of the file as a python dictionary as well as the data dictionary
 
-    Returns
-    -------
-    data_dictionary : dict
+    :return data_dictionary: dict
         Python dictionary containing the file variable data and variable attributes. If getGlobalAttrs == True then
         a tuple containing both the data_dict and global attributes is returned (data_dict, globalAttrs).
     '''
