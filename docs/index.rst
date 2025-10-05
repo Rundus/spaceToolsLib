@@ -20,10 +20,11 @@ First steps in spaceToolsLib
    install
    quickstart
    help
+   spaceToolsLib.tools.CDF_load
 
 
 spaceToolsLib Module Reference
-========================
+==============================
 
 Description of all functions within spaceToolsLib, by module.
 

@@ -7,12 +7,12 @@
 # get the scope of this file to your project
 import os
 import sys
-sys.path.insert(0,os.path.abspath(r"C:\Users\cfelt\PycharmProjects\spaceToolsLib\\"))
+sys.path.insert(0,os.path.abspath(r"C:\Users\cfelt\PycharmProjects\spaceToolsLib"))
 
 # import the modules
-import CDF_load
-import CDF_output
-import coordinates
+from spaceToolsLib.tools import *
+# import spaceToolsLib.tools.CDF_output
+# import spaceToolsLib.tools.coordinates
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -50,6 +50,6 @@ html_favicon = 'photos//spaceToolsLib_favicon.png'
 
 
 html_theme_options = {
-    'logo_only': True,
+
 }
 
