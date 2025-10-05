@@ -4,26 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 10">
+      <change afterPath="$PROJECT_DIR$/docs/source/colorbars/blue_green_White_yellow_red.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/colorbars/matlab_parula.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/help.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/math/chiSquare.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/math/steradian.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/py-modindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/CDF_load.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/install.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst/quickstart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/rst_files/tools/CDF_load.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/rst_files/tools/CDF_load.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/rst_files/tools/CDF_load.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/rst_files/tools/CDF_load.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst_files/tools/CDF_load.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/rst_files/tools/CDF_load.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst/CDF_load.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/tools/CDF_load.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst/help.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/help.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst/quickstart.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/rst_files/quickstart.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst_files/help.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/colorbars/apl_rainbow_black0.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst_files/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/install.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst_files/quickstart.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/quickstart.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/rst_files/tools/CDF_load.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/tools/CDF_load.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_load.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,21 +71,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/cfelt/PycharmProjects/spaceToolsLib/docs/photos",
+    "last_opened_file_path": "C:/Users/cfelt/PycharmProjects/spaceToolsLib/docs/source",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\source" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\tools" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\photos" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\source" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\math" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\colorbars" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\tools" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\photos" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib\math" />
     </key>
   </component>
   <component name="RunManager" selected="Python.scratch">
@@ -449,7 +451,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759704074358</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="spaceToolsLib commit 9">
+      <option name="closed" value="true" />
+      <created>1759705779168</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1759705779168</updated>
+    </task>
+    <task id="LOCAL-00030" summary="spaceToolsLib commit 10">
+      <option name="closed" value="true" />
+      <created>1759706024622</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1759706024622</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +485,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="spaceToolsLib_package commit 1" />
     <MESSAGE value="spaceToolsLib_package commit 2" />
     <MESSAGE value="spaceToolsLib_package commit 3" />
     <MESSAGE value="spaceToolsLib_package commit 4" />
@@ -491,6 +508,8 @@
     <MESSAGE value="spaceToolsLib commit 6" />
     <MESSAGE value="spaceToolsLib commit 7" />
     <MESSAGE value="spaceToolsLib commit 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 8" />
+    <MESSAGE value="spaceToolsLib commit 9" />
+    <MESSAGE value="spaceToolsLib commit 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 10" />
   </component>
 </project>
