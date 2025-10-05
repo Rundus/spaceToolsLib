@@ -10,9 +10,9 @@ import sys
 sys.path.insert(0,os.path.abspath(r"C:\Users\cfelt\PycharmProjects\spaceToolsLib\\"))
 
 # import the modules
-import spaceToolsLib.tools.CDF_load
-import spaceToolsLib.tools.CDF_output
-import spaceToolsLib.tools.coordinates
+import CDF_load
+import CDF_output
+import coordinates
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information

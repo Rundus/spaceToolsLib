@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 4">
-      <change afterPath="$PROJECT_DIR$/.readthedocs.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/notes_on_using_sphinx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/photos/spaceToolsLib_favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/photos/spaceToolsLib_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/photos/spaceToolsLib_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rst/CDF_load.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rst/help.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rst/install.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/rst/quickstart.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/spaceToolsLib_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/CDF_output.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_output.py" afterDir="false" />
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 6">
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/spaceToolsLib_logo.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +399,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759689148774</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="spaceToolsLib commit 5">
+      <option name="closed" value="true" />
+      <created>1759698588413</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1759698588413</updated>
+    </task>
+    <task id="LOCAL-00026" summary="spaceToolsLib commit 6">
+      <option name="closed" value="true" />
+      <created>1759698662978</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1759698662978</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,6 +453,8 @@
     <MESSAGE value="spaceToolsLib commit 2" />
     <MESSAGE value="spaceToolsLib commit 3" />
     <MESSAGE value="spaceToolsLib commit 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 4" />
+    <MESSAGE value="spaceToolsLib commit 5" />
+    <MESSAGE value="spaceToolsLib commit 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 6" />
   </component>
 </project>
