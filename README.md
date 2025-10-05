@@ -100,12 +100,26 @@ data_dict_output = {
 
 output_file_path = '(PATH TO OUTPUT FILE)/outputFileName.cdf' # path where your .cdf file will go
 
-global_attributes = {'Mission P.I. Name': 'Someone'} # This is line optional
+global_attributes = {'Mission P.I. Name': 'Someone', ...} # This is line optional
 
 stl.outputCDFdata(outputPath=file_out_path, 
                   data_dict=data_dict_output,
                   globalAttrsMod = global_attributes) 
 ```
 
+
+### Being minimal
+
+spaceToolsLib allows the user to be very minimal when interfacing with .cdfs since attributes (variable or global) do not have to be
+specified when writing to a .cdf. For example, we can create a barebones .cdf file by leaving the attributes empty:
+```
+    data_dict_output = {
+                    'x':[numpy.array([1,2,3,4]),{}],
+                    'y':[numpy.array([1,4,9,16]),{}],
+    }
+    stl.outputCDFdata('(path_to_file)\myFile.cdf', data_dict=data_dict_output) 
+```
+
+spaceToolsLib will construct a .cdf file with global/variable attributes containing python "none" types and/or standard template values, such as the global attribute "MISSION_NAME":"MISSION_NAM_XX.XXXX" 
 
 Author: C. Feltman, PhD
