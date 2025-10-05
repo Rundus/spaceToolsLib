@@ -5,14 +5,16 @@
 
 
 # get the scope of this file to your project
-import os
+# import os
+# import sys
+# sys.path.insert(0,os.path.abspath(r"C:\Users\cfelt\PycharmProjects\spaceToolsLib"))
 import sys
-sys.path.insert(0,os.path.abspath(r"C:\Users\cfelt\PycharmProjects\spaceToolsLib"))
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 # import the modules
-from spaceToolsLib.tools import *
-# import spaceToolsLib.tools.CDF_output
-# import spaceToolsLib.tools.coordinates
+import spaceToolsLib.tools.CDF_output
+import spaceToolsLib.tools.coordinates
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
