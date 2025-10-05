@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib_package commit 16" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spaceToolsLib" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2mDMz0dCr13o9HNciwyR8mYa1Vc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.CDF_load.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CDF_output.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_paths.executor&quot;: &quot;Run&quot;,
+    &quot;Python.epochTime.executor&quot;: &quot;Run&quot;,
+    &quot;Python.filter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scatch_paper_mSSA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_paper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratchpaper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setupSpacepy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.steradian.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cfelt/PycharmProjects/spaceToolsLib_Package&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib\math" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\spaceToolsLib" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib\Tools\Variables" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib\Tools" />
+      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib_Package\src\spaceToolsLib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.scratch">
+    <configuration name="filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spaceToolsLib_Package" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spaceToolsLib/tools" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spaceToolsLib/tools/filter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scatch_paper_mSSA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spaceToolsLib_Package" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scatch_paper_mSSA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spaceToolsLib_Package" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_paper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spaceToolsLib_Package" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_paper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratchpaper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spaceToolsLib_Package" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratchpaper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.scratch_paper" />
+        <item itemvalue="Python.scratchpaper" />
+        <item itemvalue="Python.scatch_paper_mSSA" />
+        <item itemvalue="Python.filter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="spaceToolsLib commit 2">
+      <option name="closed" value="true" />
+      <created>1726606693739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726606693739</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 2" />
+      <created>1726606956716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726606956716</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spaceToolsLib commit 3">
+      <option name="closed" value="true" />
+      <created>1726608137162</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726608137162</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spaceToolsLib commit 3">
+      <option name="closed" value="true" />
+      <created>1726716724600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726716724600</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spaceToolsLib_package commit 1">
+      <option name="closed" value="true" />
+      <created>1728485396635</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728485396635</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spaceToolsLib_package commit 1">
+      <option name="closed" value="true" />
+      <created>1728488627752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728488627752</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spaceToolsLib_package commit 2">
+      <option name="closed" value="true" />
+      <created>1728598021370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728598021370</updated>
+    </task>
+    <task id="LOCAL-00007" summary="spaceToolsLib_package commit 3">
+      <option name="closed" value="true" />
+      <created>1728598235851</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728598235851</updated>
+    </task>
+    <task id="LOCAL-00008" summary="spaceToolsLib_package commit 4">
+      <option name="closed" value="true" />
+      <created>1728670158589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728670158589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="spaceToolsLib_package commit 5">
+      <option name="closed" value="true" />
+      <created>1728672387654</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728672387654</updated>
+    </task>
+    <task id="LOCAL-00010" summary="spaceToolsLib_package commit 6">
+      <option name="closed" value="true" />
+      <created>1729528620998</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729528620998</updated>
+    </task>
+    <task id="LOCAL-00011" summary="spaceToolsLib_package commit 7">
+      <option name="closed" value="true" />
+      <created>1729529664174</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729529664174</updated>
+    </task>
+    <task id="LOCAL-00012" summary="spaceToolsLib_package commit 8">
+      <option name="closed" value="true" />
+      <created>1731701489840</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731701489840</updated>
+    </task>
+    <task id="LOCAL-00013" summary="spaceToolsLib_package commit 9">
+      <option name="closed" value="true" />
+      <created>1731702075503</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731702075503</updated>
+    </task>
+    <task id="LOCAL-00014" summary="spaceToolsLib_package commit 10">
+      <option name="closed" value="true" />
+      <created>1731702925729</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731702925729</updated>
+    </task>
+    <task id="LOCAL-00015" summary="spaceToolsLib_package commit 11">
+      <option name="closed" value="true" />
+      <created>1734386221624</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734386221624</updated>
+    </task>
+    <task id="LOCAL-00016" summary="spaceToolsLib_package commit 12">
+      <option name="closed" value="true" />
+      <created>1735511242390</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735511242390</updated>
+    </task>
+    <task id="LOCAL-00017" summary="spaceToolsLib_package commit 13">
+      <option name="closed" value="true" />
+      <created>1737146628432</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1737146628432</updated>
+    </task>
+    <task id="LOCAL-00018" summary="spaceToolsLib_package commit 14">
+      <option name="closed" value="true" />
+      <created>1737146768227</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737146768227</updated>
+    </task>
+    <task id="LOCAL-00019" summary="spaceToolsLib_package commit 15">
+      <option name="closed" value="true" />
+      <created>1753292370783</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1753292370783</updated>
+    </task>
+    <task id="LOCAL-00020" summary="spaceToolsLib_package commit 16">
+      <option name="closed" value="true" />
+      <created>1759681388691</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1759681388691</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="spaceToolsLib commit 1" />
+    <MESSAGE value="spaceToolsLib commit 2" />
+    <MESSAGE value="spaceToolsLib commit 3" />
+    <MESSAGE value="spaceToolsLib_package commit 1" />
+    <MESSAGE value="spaceToolsLib_package commit 2" />
+    <MESSAGE value="spaceToolsLib_package commit 3" />
+    <MESSAGE value="spaceToolsLib_package commit 4" />
+    <MESSAGE value="spaceToolsLib_package commit 5" />
+    <MESSAGE value="spaceToolsLib_package commit 6" />
+    <MESSAGE value="spaceToolsLib_package commit 7" />
+    <MESSAGE value="spaceToolsLib_package commit 8" />
+    <MESSAGE value="spaceToolsLib_package commit 9" />
+    <MESSAGE value="spaceToolsLib_package commit 10" />
+    <MESSAGE value="spaceToolsLib_package commit 11" />
+    <MESSAGE value="spaceToolsLib_package commit 12" />
+    <MESSAGE value="spaceToolsLib_package commit 13" />
+    <MESSAGE value="spaceToolsLib_package commit 14" />
+    <MESSAGE value="spaceToolsLib_package commit 15" />
+    <MESSAGE value="spaceToolsLib_package commit 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib_package commit 16" />
+  </component>
+</project>

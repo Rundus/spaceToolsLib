@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling","numpy","spacepy","cdflib","scipy","matplotlib"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spaceToolsLib"
+version = "0.0.60"
+authors = [
+  {name="Connor Feltman", email="cfeltman@uiowa.edu"},
+]
+description = "A small package containing useful variables, functions and methods to interface with CDF files in the field of Space Plasma Physics."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Rundus/spaceToolsLib"
+Issues = "https://github.com/Rundus/spaceToolsLib/issues"
