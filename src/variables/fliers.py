@@ -1,2 +1,0 @@
-
-fliers = ['high','low']

@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "spaceToolsLib",
-    version = "0.0.13",
+    version = "0.0.62",
     author = "C. Feltman",
     author_email = "cfeltman@uiowa.edu",
     description = "A small package containing useful variables, functions and methods to interface with CDF files in the field of Space Plasma Physics.",

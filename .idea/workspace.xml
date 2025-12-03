@@ -5,26 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 10">
-      <change afterPath="$PROJECT_DIR$/docs/source/colorbars/blue_green_White_yellow_red.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/colorbars/matlab_parula.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/help.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/math/chiSquare.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/math/steradian.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/rst_files/tools/CDF_load.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/rst_files/tools/CDF_load.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/rst_files/tools/CDF_load.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/rst_files/tools/CDF_load.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/rst_files/tools/CDF_load.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/rst_files/tools/CDF_load.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst_files/help.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/colorbars/apl_rainbow_black0.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst_files/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst_files/quickstart.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/quickstart.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rst_files/tools/CDF_load.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/tools/CDF_load.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CDF_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spaceToolsLib_Package.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spaceToolsLib_Package.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.60-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.60.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colorbars/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colorbars/apl_rainbow_black0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colorbars/blue_green_White_yellow_red.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colorbars/matlab_parula.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/chiSquare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/steradian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupFuncs/CDF_lib_path.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupFuncs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupFuncs/data_paths.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupFuncs/setupSpacepy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/CHAOS/CHAOS-7.18.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/SSA_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/mssa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/ops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/optimized.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/CDF_output.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/colors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/conversions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/coordinates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/diagnoistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/epochTime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/interpolate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/transforms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/exampleMissionAttributes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/fliers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/variables/physicsVariables.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,39 +65,54 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rundus&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rundus/spaceToolsLib.git&quot;,
+    &quot;accountId&quot;: &quot;a47acf2e-a374-4503-9491-a9a27c5f7305&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2mDMz0dCr13o9HNciwyR8mYa1Vc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.CDF_load.executor": "Run",
-    "Python.CDF_output.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.data_paths.executor": "Run",
-    "Python.epochTime.executor": "Run",
-    "Python.filter.executor": "Run",
-    "Python.scatch_paper_mSSA.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "Python.scratch_paper.executor": "Run",
-    "Python.scratchpaper.executor": "Run",
-    "Python.setupSpacepy.executor": "Run",
-    "Python.steradian.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/cfelt/PycharmProjects/spaceToolsLib/docs/source",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.CDF_load.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CDF_output.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_paths.executor&quot;: &quot;Run&quot;,
+    &quot;Python.epochTime.executor&quot;: &quot;Run&quot;,
+    &quot;Python.filter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scatch_paper_mSSA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_paper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratchpaper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setupSpacepy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.steradian.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cfelt/PycharmProjects/spaceToolsLib/docs/source&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\source" />
@@ -83,11 +121,11 @@
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/spaceToolsLib" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\source" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\math" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\colorbars" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\tools" />
     </key>
   </component>
   <component name="RunManager" selected="Python.scratch">
@@ -214,7 +252,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>

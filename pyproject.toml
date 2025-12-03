@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "spaceToolsLib"
-version = "0.0.60"
+version = "0.0.63"
 authors = [
   {name="Connor Feltman", email="cfeltman@uiowa.edu"},
 ]
@@ -20,3 +20,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Rundus/spaceToolsLib"
 Issues = "https://github.com/Rundus/spaceToolsLib/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spaceToolsLib"]
