@@ -4,50 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 10">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 12">
       <change beforePath="$PROJECT_DIR$/.idea/spaceToolsLib_Package.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spaceToolsLib_Package.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.60-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.60.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.63-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.63.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/colorbars/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/colorbars/apl_rainbow_black0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/colorbars/blue_green_White_yellow_red.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/colorbars/matlab_parula.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/chiSquare.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/steradian.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupFuncs/CDF_lib_path.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupFuncs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupFuncs/data_paths.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupFuncs/setupSpacepy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/CHAOS/CHAOS-7.18.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/SSA_class.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/mssa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/ops.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supportPackages/pymssa/optimized.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/CDF_load.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/CDF_output.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/colors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/conversions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/coordinates.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/diagnoistics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/epochTime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/interpolate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/transforms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/variables/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/variables/exampleMissionAttributes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/variables/fliers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/variables/physicsVariables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spaceToolsLib/variables/exampleMissionAttributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceToolsLib/variables/exampleMissionAttributes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +72,8 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cfelt/PycharmProjects/spaceToolsLib/docs/source&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/connor/PycharmProjects/spaceToolsLib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -505,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759706024622</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="spaceToolsLib commit 12">
+      <option name="closed" value="true" />
+      <created>1764802416340</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1764802416340</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +494,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="spaceToolsLib_package commit 2" />
     <MESSAGE value="spaceToolsLib_package commit 3" />
     <MESSAGE value="spaceToolsLib_package commit 4" />
     <MESSAGE value="spaceToolsLib_package commit 5" />
@@ -548,6 +518,7 @@
     <MESSAGE value="spaceToolsLib commit 8" />
     <MESSAGE value="spaceToolsLib commit 9" />
     <MESSAGE value="spaceToolsLib commit 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 10" />
+    <MESSAGE value="spaceToolsLib commit 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 12" />
   </component>
 </project>
