@@ -35,9 +35,10 @@ def CHAOS(lat, long, alt, times):
     from os.path import dirname
 
 
-    directoryPath = dirname(Path(__file__).parent) + "/supportPackages/CHAOS//"
-    cp.basicConfig['file.RC_index'] = f'{directoryPath}/my_RC_file.h5'
+    directoryPath = dirname(Path(__file__).parent) + "/supportPackages/CHAOS/"
     FILEPATH_CHAOS = glob(directoryPath+'/*.mat')[0]
+    FILEPATH_RC = glob(directoryPath+'/*.h5')[0]
+    cp.basicConfig['file.RC_index'] = FILEPATH_RC
 
     R_REF = 6371.2
 
