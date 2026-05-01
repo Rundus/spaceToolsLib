@@ -30,10 +30,13 @@ def CHAOS(lat, long, alt, times):
     from glob import glob
     from chaosmagpy import load_CHAOS_matfile
     from chaosmagpy.data_utils import mjd2000
+    import chaosmagpy as cp
     from pathlib import Path
     from os.path import dirname
 
+
     directoryPath = dirname(Path(__file__).parent) + "/supportPackages/CHAOS//"
+    cp.basicConfig['file.RC_index'] = f'{directoryPath}/my_RC_file.h5'
     FILEPATH_CHAOS = glob(directoryPath+'/*.mat')[0]
 
     R_REF = 6371.2

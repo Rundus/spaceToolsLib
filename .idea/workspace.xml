@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 12">
-      <change beforePath="$PROJECT_DIR$/.idea/spaceToolsLib_Package.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spaceToolsLib_Package.iml" afterDir="false" />
+    <list default="true" id="7a1a2ebb-dc74-4173-80da-cdce6e6d6e33" name="Changes" comment="spaceToolsLib commit 14">
+      <change afterPath="$PROJECT_DIR$/src/spaceToolsLib/supportPackages/CHAOS/update_CHAOS_RC_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.63-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.63.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spaceToolsLib/variables/exampleMissionAttributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/spaceToolsLib/variables/exampleMissionAttributes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.67-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spacetoolslib-0.0.67.tar.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +82,11 @@
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/spaceToolsLib/supportPackages/CHAOS/archive" />
       <recent name="$PROJECT_DIR$/src/spaceToolsLib" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\source" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\math" />
       <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files\colorbars" />
-      <recent name="C:\Users\cfelt\PycharmProjects\spaceToolsLib\docs\rst_files" />
     </key>
   </component>
   <component name="RunManager" selected="Python.scratch">
@@ -476,7 +474,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764802416340</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="spaceToolsLib commit 13">
+      <option name="closed" value="true" />
+      <created>1777659186040</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1777659186040</updated>
+    </task>
+    <task id="LOCAL-00033" summary="spaceToolsLib commit 14">
+      <option name="closed" value="true" />
+      <created>1777659378114</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1777659378114</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,8 +508,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="spaceToolsLib_package commit 3" />
-    <MESSAGE value="spaceToolsLib_package commit 4" />
     <MESSAGE value="spaceToolsLib_package commit 5" />
     <MESSAGE value="spaceToolsLib_package commit 6" />
     <MESSAGE value="spaceToolsLib_package commit 7" />
@@ -519,6 +531,8 @@
     <MESSAGE value="spaceToolsLib commit 9" />
     <MESSAGE value="spaceToolsLib commit 10" />
     <MESSAGE value="spaceToolsLib commit 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 12" />
+    <MESSAGE value="spaceToolsLib commit 13" />
+    <MESSAGE value="spaceToolsLib commit 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaceToolsLib commit 14" />
   </component>
 </project>
