@@ -6,9 +6,6 @@
 
 # Imports
 from numpy import array
-from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
-setupPYCDF()
-from spacepy.pycdf import lib
 
 # Variables
 
@@ -21,6 +18,12 @@ def InterpolateDataDict(InputDataDict,InputEpochArray,wKeys,targetEpochArray):
 
     from scipy.interpolate import CubicSpline
     import datetime as dt
+
+    # imported lazily so `import spaceToolsLib` doesn't require spacepy/the
+    # NASA CDF library unless a CDF-specific function is actually called
+    from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
+    setupPYCDF()
+    from spacepy.pycdf import lib
 
     # get the keys to interpolate
     if wKeys == []:

@@ -77,3 +77,9 @@ def outputDataDict(outputPath, data_dict, **kwargs):
                     sciFile[varKey].attrs[attrKey] = varVal[0].max()
                 elif attrVal != None:
                     sciFile[varKey].attrs[attrKey] = attrVal
+
+
+# README.md documents this function as `outputCDFdata`, but it was implemented
+# as `outputDataDict`. Kept both names as an alias (rather than renaming
+# outright) so existing code calling outputDataDict() doesn't break.
+outputCDFdata = outputDataDict

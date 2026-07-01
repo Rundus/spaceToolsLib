@@ -4,11 +4,17 @@
 
 from datetime import datetime
 from numpy import array
-from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
-setupPYCDF()
-from spacepy.pycdf import lib
+
+def _get_spacepy_lib():
+    # imported lazily so `import spaceToolsLib` doesn't require spacepy/the
+    # NASA CDF library unless a CDF-specific function is actually called
+    from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
+    setupPYCDF()
+    from spacepy.pycdf import lib
+    return lib
 
 def dateTimetoTT2000(InputEpoch,inverse):
+    lib = _get_spacepy_lib()
 
     if inverse: # tt2000 to datetime
         if isinstance(InputEpoch[0], datetime):
@@ -23,6 +29,7 @@ def dateTimetoTT2000(InputEpoch,inverse):
 
 
 def EpochTo_T0_Rocket(InputEpoch, T0):
+    lib = _get_spacepy_lib()
 
     # Convert the T0
     if isinstance(T0, datetime):  # Input Epoch is datetime array

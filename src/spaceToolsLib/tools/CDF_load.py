@@ -6,9 +6,6 @@ Author: C. Feltman
 '''
 
 from glob import glob
-from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
-setupPYCDF()
-from spacepy import pycdf
 
 def loadDictFromFile(inputFilePath, **kwargs):
 
@@ -26,6 +23,12 @@ def loadDictFromFile(inputFilePath, **kwargs):
         a tuple containing both the data_dict and global attributes is returned (data_dict, globalAttrs).
     :rtype: dict
     """
+
+    # imported lazily so `import spaceToolsLib` doesn't require spacepy/the
+    # NASA CDF library unless a CDF-specific function is actually called
+    from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
+    setupPYCDF()
+    from spacepy import pycdf
 
     input_data_dict = kwargs.get('input_data_dict', {})
     globalAttrs = {}

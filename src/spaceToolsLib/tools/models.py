@@ -92,8 +92,16 @@ def kineticTerm(kperp, z, simplify): # represents the denominator of the Alfven 
     if simplify:
         y = 1/sqrt(2)
     else:
-        plasmaFreq = sqrt((density(z) * q0 * q0) / (m_e * ep0))
-        y = 1 / sqrt(1 + (kperp * lightSpeed / plasmaFreq) ** 2)
+        # NOTE: this branch calls density(z), which is not defined/imported
+        # anywhere in spaceToolsLib. This previously raised a silent NameError
+        # at call time. Left as an explicit NotImplementedError until a real
+        # ionospheric density model is wired in -- do not guess at one here,
+        # since an incorrect density model would silently produce wrong physics.
+        raise NotImplementedError(
+            "kineticTerm(simplify=False) requires a density(z) ionospheric "
+            "density model that is not yet implemented in spaceToolsLib. "
+            "Use simplify=True, or supply your own density(z) function."
+        )
     return y
 
 def AlfvenSpeed(z,lat,long,year,kperp,simplify):
@@ -106,11 +114,13 @@ def AlfvenSpeed(z,lat,long,year,kperp,simplify):
     # [5] Vertical Comp (+ D | - U)
     # [6] Total Field
 
-    B = CHAOS(lat, long, z, year)
-    V_A = (B[6]*1E-9)/sqrt(u0 * density(z) * IonMasses[0])
-
-    if simplify:
-        V = V_A*kineticTerm(1, z, simplify)
-    else:
-        V = V_A*kineticTerm(kperp, z, simplify)
-    return V
+    # NOTE: this function calls density(z) and IonMasses, neither of which is
+    # defined/imported anywhere in spaceToolsLib. This previously raised a
+    # silent NameError at call time. Raising explicitly here until a real
+    # ionospheric density model and ion mass source are wired in -- do not
+    # guess at values here, since incorrect ones would silently produce wrong physics.
+    raise NotImplementedError(
+        "AlfvenSpeed() requires a density(z) ionospheric density model and an "
+        "IonMasses source that are not yet implemented in spaceToolsLib. "
+        "See tools/models.py."
+    )

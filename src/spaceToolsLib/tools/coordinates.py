@@ -53,8 +53,8 @@ def ILatILong_Projection(Alt, Lat, Long, b, Zproject):
     '''
 
     # --- FUNCTION START ---
-    from spaceToolsLib.Variables.physicsVariables import lat_to_meter
-    from spaceToolsLib.Tools.conversions import long_to_meter,meter_to_long
+    from spaceToolsLib.variables.physicsVariables import lat_to_meter
+    from spaceToolsLib.tools.conversions import long_to_meter,meter_to_long
     from numpy import array
     
     # convert lat/long to kilometers

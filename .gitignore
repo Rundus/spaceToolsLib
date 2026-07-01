@@ -1,6 +1,16 @@
-dist
-.idea
-__pychache__/
-*.egg_info.
+# Build artifacts
+dist/
 build/
+*.egg-info/
+
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
 .pytest_cache/
+
+# Sphinx docs -- this is *generated* output from docs/conf.py + Read the Docs.
+# It should never be committed; run `sphinx-build` locally if you need it.
+docs/_build/
