@@ -20,7 +20,7 @@ to perform many of its underlying functions. This package aims to make reading/w
 To install, open up your python terminal/command prompt and type:
 
 ```
-pip install -i https://test.pypi.org/simple/spaceToolsLib
+pip install -i https://test.pypi.org/simple/ spaceToolsLib==VERSION
 ```
 
 ### Installation notes
