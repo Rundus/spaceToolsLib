@@ -1,4 +1,6 @@
 [build-system]
+# Build-time requirements only. This is a pure-Python package, so hatchling
+# alone is sufficient here — it does NOT need numpy/spacepy/etc. to build a wheel.
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
@@ -17,7 +19,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-
+# Runtime dependencies. These are what actually get installed for users
+# via `pip install spaceToolsLib` -- previously these were only listed
+# under [build-system], which does NOT install them for end users.
 dependencies = [
     "numpy",
     "spacepy",

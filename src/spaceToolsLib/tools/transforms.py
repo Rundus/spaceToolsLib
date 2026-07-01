@@ -7,42 +7,155 @@ from spaceToolsLib.variables.physicsVariables import Re
 from numpy import array, cos, sin, matmul, radians, sqrt, arcsin
 from math import sqrt,pow,atan2,cos,sin
 def Rx(angle):
+    """
+    Build the 3x3 rotation matrix for a rotation about the X axis.
+
+    Parameters
+    ----------
+    angle : float
+        Rotation angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix.
+    """
 
     angleRad = radians(angle)
     return array([[1,0,0],
                      [0,cos(angleRad),-sin(angleRad)],
                      [0,sin(angleRad),cos(angleRad)]])
 def Ry(angle):
+    """
+    Build the 3x3 rotation matrix for a rotation about the Y axis.
+
+    Parameters
+    ----------
+    angle : float
+        Rotation angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix.
+    """
 
     angleRad = radians(angle)
     return array([[cos(angleRad),0,sin(angleRad)],
                      [0,1,0],
                      [-sin(angleRad),0,cos(angleRad)]])
 def Rz(angle):
+    """
+    Build the 3x3 rotation matrix for a rotation about the Z axis.
+
+    Parameters
+    ----------
+    angle : float
+        Rotation angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix.
+    """
     angleRad = radians(angle)
     return array([[cos(angleRad),-sin(angleRad),0],
                      [sin(angleRad),cos(angleRad),0],
                      [0,0,1]])
 def R_roll(angle):
+    """
+    Build the 3x3 rotation matrix for a roll rotation.
+
+    Parameters
+    ----------
+    angle : float
+        Roll angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix.
+    """
     angleRad = radians(angle)
     return array([[1,                0,                0],
                      [0, cos(angleRad), sin(angleRad)],
                      [0,-sin(angleRad), cos(angleRad)]])
 def R_pitch(angle):
+    """
+    Build the 3x3 rotation matrix for a pitch rotation.
+
+    Parameters
+    ----------
+    angle : float
+        Pitch angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix.
+    """
     angleRad = radians(angle)
     return array([[cos(angleRad), 0, -1*sin(angleRad)],
                      [0,                1, 0],
                      [sin(angleRad), 0, cos(angleRad)]])
 def R_yaw(angle):
+    """
+    Build the 3x3 rotation matrix for a yaw rotation.
+
+    Parameters
+    ----------
+    angle : float
+        Yaw angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix.
+    """
     angleRad = radians(angle)
     return array([[cos(angleRad),    sin(angleRad), 0],
                      [-1*sin(angleRad), cos(angleRad), 0],
                      [0,                   0,                1]])
 
 def DCM(roll,pitch,yaw):
+    """
+    Build the combined direction cosine matrix (DCM) from roll, pitch, and
+    yaw angles, applied in yaw -> pitch -> roll order.
+
+    Parameters
+    ----------
+    roll : float
+        Roll angle, in degrees.
+    pitch : float
+        Pitch angle, in degrees.
+    yaw : float
+        Yaw angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 combined rotation matrix: R_yaw @ R_pitch @ R_roll.
+    """
     return matmul(R_yaw(yaw),matmul(R_pitch(pitch),R_roll(roll)))
 
 def ENUtoECEF(Lat,Long):
+    """
+    Build the 3x3 rotation matrix that transforms vectors from a local
+    East-North-Up (ENU) frame to Earth-Centered, Earth-Fixed (ECEF)
+    coordinates at a given latitude/longitude.
+
+    Parameters
+    ----------
+    Lat : float
+        Geodetic latitude, in degrees.
+    Long : float
+        Geodetic longitude, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 ENU-to-ECEF rotation matrix.
+    """
     angleLat = radians(Lat)
     angleLong = radians(Long)
 
@@ -99,6 +212,25 @@ def ECEF_to_Geodedic(x,y,z):
     return llh
 
 def sphereToCartesian(r,theta,phi):
+    """
+    Build the 3x3 rotation matrix that transforms vectors from spherical
+    (r, theta, phi) unit-vector components to Cartesian (x, y, z).
+
+    Parameters
+    ----------
+    r : float
+        Radial coordinate (unused in the rotation matrix itself, included
+        for interface symmetry with spherical coordinates).
+    theta : float
+        Polar angle, in degrees.
+    phi : float
+        Azimuthal angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 spherical-to-Cartesian rotation matrix.
+    """
     thetaRad = radians(theta)
     phiRad = radians(phi)
 
@@ -110,6 +242,25 @@ def sphereToCartesian(r,theta,phi):
     return R
 
 def Rotation3D(yaw, pitch, roll):
+    """
+    Build a combined 3D rotation matrix from yaw, pitch, and roll angles
+    using a single closed-form expression (as opposed to DCM(), which
+    composes Rx/Ry/Rz matrices via matrix multiplication).
+
+    Parameters
+    ----------
+    yaw : float
+        Yaw angle, in degrees.
+    pitch : float
+        Pitch angle, in degrees.
+    roll : float
+        Roll angle, in degrees.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 combined rotation matrix.
+    """
 
     yawR = radians(yaw)
     pitchR = radians(pitch)
@@ -117,6 +268,22 @@ def Rotation3D(yaw, pitch, roll):
     return array([[cos(yawR)*cos(pitchR), cos(yawR)*sin(pitchR)*sin(rollR) - sin(yawR)*cos(rollR), cos(yawR)*sin(pitchR)*cos(rollR) + sin(yawR)*sin(rollR) ], [sin(yawR)*cos(pitchR), sin(yawR)*sin(pitchR)*sin(rollR) + cos(yawR)*cos(rollR), sin(yawR)*sin(pitchR)*cos(rollR) - cos(yawR)*sin(rollR)], [-1*sin(pitchR), cos(pitchR)*sin(rollR), cos(pitchR)*cos(rollR)]])
 
 def RotationAboutAxes(theta, axX,axY,axZ):
+    """
+    Build the 3x3 rotation matrix for a rotation by angle theta about an
+    arbitrary axis (axX, axY, axZ), using the Rodrigues rotation formula.
+
+    Parameters
+    ----------
+    theta : float
+        Rotation angle, in degrees.
+    axX, axY, axZ : float
+        Components of the (unit) rotation axis vector.
+
+    Returns
+    -------
+    numpy.ndarray
+        3x3 rotation matrix about the given axis.
+    """
 
     thetaR = radians(theta)
     return array([
@@ -126,5 +293,26 @@ def RotationAboutAxes(theta, axX,axY,axZ):
         ])
 
 def GreatCircleDistance(lat1,lat2,long1,long2):
+    """
+    Compute the great-circle distance between two points on Earth's
+    surface using the haversine formula.
+
+    Parameters
+    ----------
+    lat1 : float
+        Latitude of the first point, in degrees.
+    lat2 : float
+        Latitude of the second point, in degrees.
+    long1 : float
+        Longitude of the first point, in degrees.
+    long2 : float
+        Longitude of the second point, in degrees.
+
+    Returns
+    -------
+    float
+        Great-circle distance between the two points, in kilometers
+        (using Earth's radius Re).
+    """
 
     return 2*Re*arcsin(sqrt( sin(radians( (lat2-lat1)/2  ))**2 + cos(radians(lat1))*cos(radians(lat2))*sin(radians( (long2-long1)/2  ))**2  ))

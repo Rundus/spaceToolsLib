@@ -15,7 +15,20 @@ import datetime as dt
 # --- --- --- --- ---
 
 class makeRocketAttrs:
+    """
+    Thin wrapper that exposes a mission attributes dictionary's
+    'globalAttributes' entry as an object attribute, for use as the
+    default globalAttrsMod in CDF_output.outputDataDict().
+    """
     def __init__(self, missionAttrs):
+        """
+        Parameters
+        ----------
+        missionAttrs : dict
+            A dictionary with at least a 'globalAttributes' key, whose
+            value is itself a dict of CDF global attribute name/value
+            pairs.
+        """
         self.globalAttributes = missionAttrs['globalAttributes']
 
 
@@ -23,6 +36,18 @@ class makeRocketAttrs:
 # --- ACES II Mission ---
 # --- --- --- --- --- ---
 def EXAMPLE_mission_dicts():
+    """
+    Build an example/template makeRocketAttrs object with placeholder CDF
+    global attributes, used as the default globalAttrsMod in
+    CDF_output.outputDataDict() when the caller doesn't supply their own.
+
+    Returns
+    -------
+    makeRocketAttrs
+        Object whose .globalAttributes dict contains placeholder/template
+        CDF global attribute values (Data_type, PI_name, Logical_file_id,
+        etc.) meant to be overridden by the caller.
+    """
 
     Example_attrs_dict = {
         'globalAttributes':

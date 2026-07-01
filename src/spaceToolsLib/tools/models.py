@@ -10,6 +10,23 @@ from spaceToolsLib.variables.physicsVariables import q0,Re,u0,lightSpeed,m_e,ep0
 
 # --- Dipole Magnetic Field ---
 def Bdip_mag(Alt_km, Lat_deg):
+    """
+    Compute the magnitude of Earth's dipole magnetic field at a given
+    altitude and geomagnetic latitude.
+
+    Parameters
+    ----------
+    Alt_km : float or array_like
+        Altitude above Earth's surface, in kilometers.
+    Lat_deg : float or array_like
+        Geomagnetic latitude, in degrees.
+
+    Returns
+    -------
+    float or list of float
+        Dipole field magnitude (in Tesla). Returns a list if array-like
+        inputs are given, or a single float for scalar inputs.
+    """
     B0 = 3.12E-5
 
     try: # if input data is arrays
@@ -24,6 +41,31 @@ def Bdip_mag(Alt_km, Lat_deg):
 
 
 def CHAOS(lat, long, alt, times):
+    """
+    Compute the geomagnetic field vector at given locations/times using the
+    CHAOS geomagnetic field model (core, crustal, and external/induced
+    contributions), via the chaosmagpy package.
+
+    Uses the bundled CHAOS .mat model file and RC index .h5 file found in
+    supportPackages/CHAOS/.
+
+    Parameters
+    ----------
+    lat : array_like
+        Geographic latitude of each point, in degrees.
+    long : array_like
+        Geographic longitude of each point, in degrees.
+    alt : array_like
+        Altitude of each point, in kilometers.
+    times : array_like of datetime.date
+        Date (year, month, day, hour used) for each point.
+
+    Returns
+    -------
+    numpy.ndarray
+        Array of shape (N, 3) giving the magnetic field vector at each
+        point in ENU order: [B_East, B_North, B_Up], in nanotesla.
+    """
 
     # imports
     import datetime as dt
@@ -89,6 +131,33 @@ def CHAOS(lat, long, alt, times):
     return B_ENU
 
 def kineticTerm(kperp, z, simplify): # represents the denominator of the Alfven velocity term: 1/(1 + (kperp*c/omega_pe)^2)^1/2
+    """
+    Compute the kinetic correction term in the denominator of the Alfven
+    velocity: 1 / sqrt(1 + (kperp * c / omega_pe)^2).
+
+    Parameters
+    ----------
+    kperp : float
+        Perpendicular wavenumber.
+    z : float
+        Altitude, passed to the (currently unimplemented) density(z)
+        ionospheric density model when simplify=False.
+    simplify : bool
+        If True, returns the simplified constant 1/sqrt(2) without
+        needing a density model. If False, requires a density(z) model
+        that is not yet implemented (see Raises).
+
+    Returns
+    -------
+    float
+        The kinetic correction term.
+
+    Raises
+    ------
+    NotImplementedError
+        If simplify=False, since this branch depends on a density(z)
+        ionospheric density model not yet implemented in spaceToolsLib.
+    """
     if simplify:
         y = 1/sqrt(2)
     else:
@@ -105,6 +174,37 @@ def kineticTerm(kperp, z, simplify): # represents the denominator of the Alfven 
     return y
 
 def AlfvenSpeed(z,lat,long,year,kperp,simplify):
+    """
+    Compute the Alfven speed at a given location/time, combining the CHAOS
+    geomagnetic field model with a kinetic correction term.
+
+    Parameters
+    ----------
+    z : float
+        Altitude, in kilometers.
+    lat : float
+        Geographic latitude, in degrees.
+    long : float
+        Geographic longitude, in degrees.
+    year : datetime.date
+        Date used to evaluate the CHAOS field model.
+    kperp : float
+        Perpendicular wavenumber, passed to kineticTerm().
+    simplify : bool
+        Passed to kineticTerm() -- see that function for details.
+
+    Returns
+    -------
+    float
+        The Alfven speed.
+
+    Raises
+    ------
+    NotImplementedError
+        Always currently, since this function depends on a density(z)
+        ionospheric density model and an IonMasses source that are not yet
+        implemented in spaceToolsLib.
+    """
     # -- Output order forpyIGRF.igrf_value ---
     # [0] Declination (+ E | - W)
     # [1] Inclination (+ D | - U)

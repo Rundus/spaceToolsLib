@@ -10,11 +10,32 @@ from numpy import array
 # Variables
 
 def InterpolateDataDict(InputDataDict,InputEpochArray,wKeys,targetEpochArray):
+    """
+    Cubic-spline interpolate the variables of a spaceToolsLib data
+    dictionary from their original epoch onto a new target epoch array.
 
-    # InputDataDict --> Contains a data_dict of the data which will be interpolated onto the new dataset
-    # InputEpoch --> The epoch that InputDataDict uses
-    # wKeys --> Keys of the variables in InputDataDict that we want to interpolate. If wKeys == [], do all the keys
-    # targetEpoch --> Epoch that the data will be interpolated onto (MUST BE IN TT2000)
+    Parameters
+    ----------
+    InputDataDict : dict
+        A spaceToolsLib data dictionary containing the data to interpolate.
+    InputEpochArray : array_like
+        The epoch (TT2000 values or datetime.datetime objects) that
+        InputDataDict's data currently uses.
+    wKeys : list of str
+        Keys of the variables in InputDataDict to interpolate. If [],
+        interpolates every key in InputDataDict.
+    targetEpochArray : array_like
+        The epoch to interpolate onto (TT2000 values or datetime.datetime
+        objects).
+
+    Returns
+    -------
+    dict
+        A new data dictionary with each requested variable's data
+        interpolated (via scipy.interpolate.CubicSpline) onto
+        targetEpochArray. Any key containing 'Epoch' is instead replaced
+        directly with targetEpochArray (converted to datetime).
+    """
 
     from scipy.interpolate import CubicSpline
     import datetime as dt

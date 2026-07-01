@@ -7,6 +7,30 @@ coordinatesSets = [['_east','_north','_up'],['_x','_y','_z'],['_e','_p','_r']]
 coordinatesNames = ['ENU','RktFrm','Field_Aligned']
 
 def getCoordinateKeys(data_dict):
+    """
+    Detect which coordinate system a data dictionary's variable keys belong
+    to (ENU, rocket-frame, or field-aligned), based on key name suffixes.
+
+    Parameters
+    ----------
+    data_dict : dict
+        A spaceToolsLib data dictionary whose keys may include coordinate
+        component suffixes such as '_east'/'_north'/'_up' (ENU),
+        '_x'/'_y'/'_z' (rocket frame), or '_e'/'_p'/'_r' (field-aligned).
+
+    Returns
+    -------
+    coordcompNames : list of str
+        The three matching keys for the detected coordinate set, e.g.
+        ['B_east', 'B_north', 'B_up']. Empty list if no complete set of
+        three is found.
+    coordSetName : str
+        Name of the detected coordinate system: 'ENU', 'RktFrm', or
+        'Field_Aligned'. Empty list if none detected.
+    coordSet : list of str
+        The suffix strings used to detect that coordinate system, e.g.
+        ['_east', '_north', '_up']. Empty list if none detected.
+    """
 
     keys = [key for key in data_dict.keys()]
 

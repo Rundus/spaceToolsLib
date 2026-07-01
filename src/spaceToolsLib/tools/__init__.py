@@ -4,7 +4,7 @@ from .CDF_output import *
 from .colors import *
 from .conversions import *
 from .coordinates import *
-from .diagnoistics import *
+from .diagnostics import *
 from .epochTime import *
 from .filter import *
 from .interpolate import *

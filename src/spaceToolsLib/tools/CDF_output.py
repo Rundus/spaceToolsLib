@@ -26,6 +26,9 @@ def outputDataDict(outputPath, data_dict, **kwargs):
 
     Returns
     -------
+    None
+        Writes the .cdf file to outputPath as a side effect; does not
+        return a value.
     '''
 
     from os import remove, path

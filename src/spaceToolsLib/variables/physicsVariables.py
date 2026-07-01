@@ -1,6 +1,10 @@
 # --- physicsVariables.py ---
 # --- Author: C. Feltman ---
 # DESCRIPTION: Place to store all the Epoch conversions I often do
+"""
+Physical constants and ion/neutral species masses commonly used across
+spaceToolsLib (SI units unless noted).
+"""
 
 m_to_km = 1000
 lat_to_meter = 111.319488  # 1 deg latitude to kilometers on Earth

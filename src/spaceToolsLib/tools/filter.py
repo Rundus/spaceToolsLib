@@ -10,7 +10,36 @@ from pandas import Series,DataFrame
 
 
 class butterFilter:
+    """
+    Thin wrapper around scipy.signal.butter + filtfilt for applying
+    Butterworth filters (bandpass, lowpass, highpass, bandstop) to data.
+    """
     def butterworth(self,lowcutoff, highcutoff, fs, order, filtertype):
+        """
+        Design a Butterworth filter's (b, a) coefficients.
+
+        Parameters
+        ----------
+        lowcutoff : float
+            Low cutoff frequency. Used for 'bandpass', 'highpass', and
+            'bandstop' filter types.
+        highcutoff : float
+            High cutoff frequency. Used for 'bandpass', 'lowpass', and
+            'bandstop' filter types.
+        fs : float
+            Sampling frequency of the data.
+        order : int
+            Order of the filter.
+        filtertype : str
+            One of 'bandpass', 'lowpass', 'highpass', 'bandstop'
+            (case-insensitive).
+
+        Returns
+        -------
+        tuple of numpy.ndarray
+            The (b, a) numerator/denominator filter coefficients, as
+            returned by scipy.signal.butter.
+        """
         if filtertype.lower() == 'bandpass':
             return butter(N = order, Wn = [lowcutoff, highcutoff], fs=fs, btype='bandpass')
         elif filtertype.lower() == 'lowpass':
@@ -20,6 +49,33 @@ class butterFilter:
         elif filtertype.lower() == 'bandstop':
             return butter(N=order, Wn = [lowcutoff, highcutoff], fs=fs, btype='bandstop')
     def butter_filter(self,data, lowcutoff, highcutoff, fs, order,filtertype):
+        """
+        Design and apply a zero-phase Butterworth filter to data in one call.
+
+        Parameters
+        ----------
+        data : array_like
+            The signal to filter.
+        lowcutoff : float
+            Low cutoff frequency. Used for 'bandpass', 'highpass', and
+            'bandstop' filter types.
+        highcutoff : float
+            High cutoff frequency. Used for 'bandpass', 'lowpass', and
+            'bandstop' filter types.
+        fs : float
+            Sampling frequency of the data.
+        order : int
+            Order of the filter.
+        filtertype : str
+            One of 'bandpass', 'lowpass', 'highpass', 'bandstop'
+            (case-insensitive).
+
+        Returns
+        -------
+        numpy.ndarray
+            The filtered signal, produced via scipy.signal.filtfilt
+            (zero-phase, forward-backward filtering).
+        """
         b, a = self.butterworth(lowcutoff, highcutoff, fs, order, filtertype)
         y = filtfilt(b, a, data)
         return y
@@ -150,6 +206,7 @@ class SSA(object):
         w = array(list(arange(self.L) + 1) + [self.L] * (self.K - self.L - 1) + list(arange(self.L) + 1)[::-1])
 
         def w_inner(F_i, F_j):
+            """Weighted inner product of two component vectors, used to build the w-correlation matrix."""
             return w.dot(F_i * F_j)
 
         # Calculated weighted norms, ||F_i||_w, then invert.
@@ -164,10 +221,10 @@ class SSA(object):
                 self.Wcorr[j, i] = self.Wcorr[i, j]
         return self.Wcorr
     def plot_wcorr(self, min=None, max=None):
-        import matplotlib.pyplot as plt
         """
         Plots the w-correlation matrix for the decomposed time series.
         """
+        import matplotlib.pyplot as plt
         if min is None:
             min = 0
         if max is None:
@@ -252,6 +309,11 @@ class SSA(object):
         plt.tight_layout()        
 
 class mSSA:
+    """
+    Multivariate Singular Spectrum Analysis (mSSA) helpers built on top of
+    the vendored supportPackages.pymssa.MSSA implementation, adapted to
+    work with spaceToolsLib data dictionaries.
+    """
     def mSSA_components(self, data_dict_input, compNames, SSA_window_Size, mirrorData, **kwargs):
 
         '''
@@ -347,6 +409,33 @@ class mSSA:
         return data_dict_output
 
     def generateGrouping(self, SSA_window_Size, badCompIndicies, InvestigateIndicies, noiseLimit):
+        """
+        Build a grouping list of component-index lists for mSSA/SSA
+        component plotting: the full set, the flagged "bad" components,
+        any components under investigation, the "noise" tail, and the
+        remaining "good" components.
+
+        Parameters
+        ----------
+        SSA_window_Size : int
+            The SSA/mSSA window size used to generate the components.
+            If 0, this function returns an empty list (signals "not an
+            SSA component file").
+        badCompIndicies : list of int
+            Indices of components identified as bad/unwanted.
+        InvestigateIndicies : list of list of int
+            Additional groupings of component indices to inspect
+            individually.
+        noiseLimit : int
+            Index above which components are considered noise.
+
+        Returns
+        -------
+        list of list of int
+            A list of index groupings: [all components], [bad components],
+            *[investigate groupings], [noise components], [remaining good
+            components]. Returns [] if SSA_window_Size == 0.
+        """
 
         if SSA_window_Size == 0: # if the file I'm working on isn't an SSAcomp file
             return []

@@ -6,14 +6,41 @@ from datetime import datetime
 from numpy import array
 
 def _get_spacepy_lib():
-    # imported lazily so `import spaceToolsLib` doesn't require spacepy/the
-    # NASA CDF library unless a CDF-specific function is actually called
+    """
+    Lazily set up and return spacepy.pycdf.lib.
+
+    Imported lazily so `import spaceToolsLib` doesn't require spacepy/the
+    NASA CDF library unless a CDF-specific function is actually called.
+
+    Returns
+    -------
+    module
+        The spacepy.pycdf.lib module, used for TT2000 <-> datetime
+        conversions.
+    """
     from spaceToolsLib.setupFuncs.setupSpacepy import setupPYCDF
     setupPYCDF()
     from spacepy.pycdf import lib
     return lib
 
 def dateTimetoTT2000(InputEpoch,inverse):
+    """
+    Convert an epoch array between Python datetimes and CDF TT2000 values.
+
+    Parameters
+    ----------
+    InputEpoch : array_like
+        Array of either datetime.datetime objects or TT2000 integer/float
+        values, depending on `inverse`.
+    inverse : bool
+        If True, convert TT2000 -> datetime. If False, convert
+        datetime -> TT2000.
+
+    Returns
+    -------
+    numpy.ndarray
+        The converted epoch array.
+    """
     lib = _get_spacepy_lib()
 
     if inverse: # tt2000 to datetime
@@ -29,6 +56,23 @@ def dateTimetoTT2000(InputEpoch,inverse):
 
 
 def EpochTo_T0_Rocket(InputEpoch, T0):
+    """
+    Convert an epoch array into seconds elapsed since a reference time T0.
+
+    Parameters
+    ----------
+    InputEpoch : array_like
+        Array of either datetime.datetime objects or TT2000 integer/float
+        values.
+    T0 : datetime.datetime or int or float
+        The reference ("zero") time. Must be a datetime, or a TT2000 value
+        (must be >= 1e6, used as a sanity check to catch non-TT2000 input).
+
+    Returns
+    -------
+    numpy.ndarray
+        InputEpoch expressed as seconds elapsed since T0.
+    """
     lib = _get_spacepy_lib()
 
     # Convert the T0

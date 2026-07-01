@@ -1,5 +1,20 @@
 
 def matlab_parula_cmap(**kwargs):
+    """
+    Build a colormap matching MATLAB's default "parula" colormap.
+
+    Parameters
+    ----------
+    showColorbar : bool, optional
+        If True, immediately displays a demo of this colormap using either
+        viscm (if installed) or a simple imshow gradient as a fallback.
+        Default is False.
+
+    Returns
+    -------
+    matplotlib.colors.LinearSegmentedColormap
+        The parula colormap.
+    """
     showColorbar = kwargs.get('showColorbar', False)
 
     from matplotlib.colors import LinearSegmentedColormap

@@ -1,6 +1,20 @@
 
 
 def blue_green_white_yellow_red_cmap(**kwargs):
+    """
+    Build a diverging blue-green-white-yellow-red colormap.
+
+    Parameters
+    ----------
+    showColorbar : bool, optional
+        If True, immediately displays a demo scatter plot using this
+        colormap. Default is False.
+
+    Returns
+    -------
+    matplotlib.colors.ListedColormap
+        The colormap, registered under the name 'blue_green_white_yellow_red'.
+    """
 
     showColorbar = kwargs.get('showColorbar',False)
 
@@ -11,6 +25,7 @@ def blue_green_white_yellow_red_cmap(**kwargs):
 
     cbarColors = [[red[i], green[i], blue[i]] for i in range(len(index))]
     def rgb2hex(r,g,b):
+        """Convert an (r, g, b) integer triple (0-255) to a '#rrggbb' hex string."""
         return "#{:02x}{:02x}{:02x}".format(r,g,b)
 
     # --- create the colorbar ---
