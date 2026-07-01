@@ -5,7 +5,7 @@
 # --- The Basic rotation matricies ---
 from spaceToolsLib.variables.physicsVariables import Re
 from numpy import array, cos, sin, matmul, radians, sqrt, arcsin
-from math import sqrt,pow,atan2,cos,sin
+from math import sqrt,pow,atan2
 def Rx(angle):
     """
     Build the 3x3 rotation matrix for a rotation about the X axis.
