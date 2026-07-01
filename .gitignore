@@ -1,0 +1,6 @@
+dist
+.idea
+__pychache__/
+*.egg_info.
+build/
+.pytest_cache/
